@@ -32,6 +32,7 @@ Public Class Form1
             postresponse = DirectCast(postReq.GetResponse(), HttpWebResponse)
             MsgBox("Login Berhasil")
             Dim awe As New Form2
+            awe.LabelNama.Text = MetroTextBox1.Text
             awe.Show()
             Close()
 
@@ -47,6 +48,12 @@ Public Class Form1
     End Sub
 
     Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
-        End
+        Dim result As Integer = MessageBox.Show("Exit Application ?", "OrderGan", MessageBoxButtons.YesNo)
+        If result = DialogResult.Yes Then
+            End
+        ElseIf result = DialogResult.No Then
+
+        End If
+
     End Sub
 End Class
