@@ -40,7 +40,7 @@ Partial Class Form2
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(126, 47)
         Me.MetroButton1.TabIndex = 0
-        Me.MetroButton1.Text = "MetroButton1"
+        Me.MetroButton1.Text = "Logout"
         '
         'Form2
         '
