@@ -35,7 +35,7 @@ Public Class Form1
             Dim awe As New Form2
             awe.LabelNama.Text = MetroTextBox1.Text
             awe.Show()
-            Close()
+            Hide()
 
             ''Dim postreqreader As New StreamReader(postresponse.GetResponseStream())
             ''Dim thepage As String = postreqreader.ReadToEnd

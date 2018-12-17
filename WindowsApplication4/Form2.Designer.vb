@@ -38,7 +38,6 @@ Partial Class Form2
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.MetroButton4 = New MetroFramework.Controls.MetroButton()
         Me.MetroButton3 = New MetroFramework.Controls.MetroButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.LabelNama = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
@@ -48,10 +47,11 @@ Partial Class Form2
         Me.MetroLabel2 = New MetroFramework.Controls.MetroLabel()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.PanelFood = New System.Windows.Forms.Panel()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1.SuspendLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.PanelFood.SuspendLayout()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'MetroButton1
@@ -69,11 +69,11 @@ Partial Class Form2
         'MetroButton2
         '
         Me.MetroButton2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.MetroButton2.Location = New System.Drawing.Point(300, 117)
+        Me.MetroButton2.Location = New System.Drawing.Point(242, 117)
         Me.MetroButton2.Name = "MetroButton2"
-        Me.MetroButton2.Size = New System.Drawing.Size(113, 50)
+        Me.MetroButton2.Size = New System.Drawing.Size(156, 50)
         Me.MetroButton2.TabIndex = 1
-        Me.MetroButton2.Text = "Show Example json"
+        Me.MetroButton2.Text = "Masuk ke menu order"
         '
         'Panel1
         '
@@ -112,16 +112,6 @@ Partial Class Form2
         Me.MetroButton3.Text = "         Home"
         Me.MetroButton3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MetroButton3.Theme = MetroFramework.MetroThemeStyle.Dark
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
-        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.PictureBox1.Location = New System.Drawing.Point(58, 36)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(82, 78)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
         '
         'LabelNama
         '
@@ -201,7 +191,7 @@ Partial Class Form2
         Me.DataGridView1.GridColor = System.Drawing.SystemColors.ActiveBorder
         Me.DataGridView1.Location = New System.Drawing.Point(23, 173)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(390, 118)
+        Me.DataGridView1.Size = New System.Drawing.Size(375, 118)
         Me.DataGridView1.TabIndex = 7
         '
         'PanelFood
@@ -211,22 +201,32 @@ Partial Class Form2
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.PanelFood.Controls.Add(Me.DataGridView1)
         Me.PanelFood.Controls.Add(Me.MetroButton2)
-        Me.PanelFood.Location = New System.Drawing.Point(207, 36)
+        Me.PanelFood.Location = New System.Drawing.Point(222, 36)
         Me.PanelFood.Name = "PanelFood"
-        Me.PanelFood.Size = New System.Drawing.Size(434, 325)
+        Me.PanelFood.Size = New System.Drawing.Size(419, 325)
         Me.PanelFood.TabIndex = 8
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackgroundImage = CType(resources.GetObject("PictureBox1.BackgroundImage"), System.Drawing.Image)
+        Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.PictureBox1.Location = New System.Drawing.Point(58, 36)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(82, 78)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(643, 393)
+        Me.Controls.Add(Me.PanelFood)
         Me.Controls.Add(Me.MetroLabel2)
         Me.Controls.Add(Me.MetroLabel1)
         Me.Controls.Add(Me.txtElapsed)
         Me.Controls.Add(Me.txtTime)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.PanelFood)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
         Me.Name = "Form2"
         Me.Resizable = False
@@ -234,9 +234,9 @@ Partial Class Form2
         Me.Text = "OrderGan Crud"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.PanelFood.ResumeLayout(False)
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

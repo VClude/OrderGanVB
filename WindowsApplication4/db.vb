@@ -11,9 +11,9 @@ Module db
     Sub initdb()
         Try
             Dim str As String
-            str = "server=127.0.0.1;" _
-            & "uid=root;" _
-            & "pwd=root;" _
+            str = "server=125.166.114.8;" _
+            & "uid=vclude;" _
+            & "pwd=123qwe!@#QWE;" _
             & "database=homestead"
 
             conn = New MySqlConnection(str)
