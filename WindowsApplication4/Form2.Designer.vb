@@ -32,21 +32,31 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.MetroButton1 = New MetroFramework.Controls.MetroButton()
+        Me.MetroButton2 = New MetroFramework.Controls.MetroButton()
         Me.SuspendLayout()
         '
         'MetroButton1
         '
-        Me.MetroButton1.Location = New System.Drawing.Point(91, 92)
+        Me.MetroButton1.Location = New System.Drawing.Point(221, 294)
         Me.MetroButton1.Name = "MetroButton1"
         Me.MetroButton1.Size = New System.Drawing.Size(126, 47)
         Me.MetroButton1.TabIndex = 0
         Me.MetroButton1.Text = "Logout"
         '
+        'MetroButton2
+        '
+        Me.MetroButton2.Location = New System.Drawing.Point(90, 291)
+        Me.MetroButton2.Name = "MetroButton2"
+        Me.MetroButton2.Size = New System.Drawing.Size(113, 50)
+        Me.MetroButton2.TabIndex = 1
+        Me.MetroButton2.Text = "Show Example json"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(300, 300)
+        Me.ClientSize = New System.Drawing.Size(571, 364)
+        Me.Controls.Add(Me.MetroButton2)
         Me.Controls.Add(Me.MetroButton1)
         Me.Name = "Form2"
         Me.Text = "OrderGan Crud"
@@ -55,4 +65,5 @@ Partial Class Form2
     End Sub
 
     Friend WithEvents MetroButton1 As MetroFramework.Controls.MetroButton
+    Friend WithEvents MetroButton2 As MetroFramework.Controls.MetroButton
 End Class
