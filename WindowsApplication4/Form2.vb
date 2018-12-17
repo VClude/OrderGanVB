@@ -12,7 +12,7 @@ Public Class Form2
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Timer1.Interval = 1000
         ListBox1.Height = 0
-
+        Srvaddr()
         awe = 0
         Timer1.Enabled = True
         _elapseStartTime = DateTime.Now
@@ -21,7 +21,7 @@ Public Class Form2
     End Sub
 
     Private Sub MetroButton1_Click(sender As Object, e As EventArgs) Handles MetroButton1.Click
-        Dim req As HttpWebRequest = HttpWebRequest.CreateHttp("http://125.166.114.8/ci/login/logout")
+        Dim req As HttpWebRequest = HttpWebRequest.CreateHttp(server + "/ci/login/logout")
         Dim resp As HttpWebResponse
         Try
             Dim result As Integer = MessageBox.Show("Do you want to Logout?", "OrderGan", MessageBoxButtons.YesNo)
@@ -43,7 +43,7 @@ Public Class Form2
     End Sub
 
     Private Sub MetroButton2_Click(sender As Object, e As EventArgs) Handles MetroButton2.Click
-        Dim request As WebRequest = WebRequest.Create("http://125.166.114.8:8000/cart/liat")
+        Dim request As WebRequest = WebRequest.Create(serverapi + "/cart/liat")
         request.Method = "POST"
         Dim postData As String
         postData = "dataretrieve=all"

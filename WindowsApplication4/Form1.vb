@@ -4,7 +4,7 @@ Imports System.IO
 Public Class Form1
     Dim logincookie As CookieContainer
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Srvaddr()
     End Sub
 
 
@@ -15,12 +15,13 @@ Public Class Form1
         Dim encoding As New UTF8Encoding
         Dim byteData As Byte() = encoding.GetBytes(postData)
 
-        Dim postReq As HttpWebRequest = DirectCast(WebRequest.Create("http://125.166.114.8/ci/login/makeLogin"), HttpWebRequest)
+        Dim postReq As HttpWebRequest = DirectCast(WebRequest.Create(server + "/ci/login/makeLogin"), HttpWebRequest)
         postReq.Method = "POST"
+        Srvaddr()
         postReq.KeepAlive = True
         postReq.CookieContainer = tempCookies
         postReq.ContentType = "application/x-www-form-urlencoded"
-        postReq.Referer = "http://125.166.114.8/ci/login/makeLogin"
+        postReq.Referer = server + "/ci/login/makeLogin"
         postReq.UserAgent = "Mozilla/5.0 (Windows; U; Windows NT 6.1; ru; rv:1.9.2.3) Gecko/20100401 Firefox/4.0 (.NET CLR 3.5.30729)"
         postReq.ContentLength = byteData.Length
 
