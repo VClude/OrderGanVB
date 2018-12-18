@@ -174,6 +174,12 @@ Partial Class FormKiosk
         Me.Button1.TabIndex = 16
         Me.Button1.Text = "Exit"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Anchor = AnchorStyles.Bottom
+        Me.Button1.Anchor = AnchorStyles.Left
+        Me.Button1.Anchor = AnchorStyles.Right
+
+
+
         '
         'FormKiosk
         '
